@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="514.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SecondController">
+   <children>
+      <MenuBar layoutX="-3.0" prefHeight="514.0" prefWidth="603.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="New" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="open" mnemonicParsing="false" onAction="#OpenFile" text="Open" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save As" />
+                  <MenuItem mnemonicParsing="false" text="Preferences. . . ." />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Revert" />
+                  <MenuItem fx:id="quitmenu" mnemonicParsing="false" onAction="#ExitMenus" text="Quit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              	  <MenuItem mnemonicParsing="false" text="Copy" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+                  <MenuItem mnemonicParsing="false" text="Select All" />
+                  <MenuItem mnemonicParsing="false" text="Modifiy" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Option" />
+            <Menu mnemonicParsing="false" text="Transform">
+              <items>
+                <MenuItem fx:id="sepiatone" mnemonicParsing="false" onAction="#SepiaTone" text="Sepia Tone" />
+                  <MenuItem fx:id="grayscale" mnemonicParsing="false" onAction="#Grayscale" text="Grayscale" />
+                  <MenuItem fx:id="blurred" mnemonicParsing="false" onAction="#BlurredImage" text="Blurred" />
+                  <MenuItem fx:id="cropimage" mnemonicParsing="false" onAction="#CropImage" text="Crop Image" />
+                  <MenuItem fx:id="negativepositive" mnemonicParsing="false" onAction="#NegativePositive" text="Negative Positive" />
+                  <MenuItem fx:id="Rotateimage" mnemonicParsing="false" onAction="#RotateImage" text="Rotate Image" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About" />
+            <Menu mnemonicParsing="false" text="Developers">
+              <items>
+                <MenuItem fx:id="projectdesigner" mnemonicParsing="false" onAction="#ProjectDesigner" text="Project Designer" />
+                  <MenuItem fx:id="projecttester" mnemonicParsing="false" onAction="#ProjectTester" text="Project Tester" />
+                  <MenuItem fx:id="debugger" mnemonicParsing="false" onAction="#CoderProfile" text="Developer" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Code">
+              <items>
+                <MenuItem fx:id="viewcode" mnemonicParsing="false" onAction="#ViewCode" text="View Code" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help" />
+        </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MenuBar>
+  
+   </children>
+</AnchorPane>
